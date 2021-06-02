@@ -10,49 +10,29 @@
 </head>
 <body>
     <div id="root">
-        <h1 id="mainTitle">5 Questions: Galactic Trivia</h1>
+        <h1 id="mainTitle">5 Questions: Galaxy Trivia</h1>
         <div id="instructions">
-        <p>Let's play a game! The category is Star Wars characters, and I'm thinking of a name that fits into that category. </p><p>Ask me up to 5 questions, and see if you can guess who I am. If you run out of guesses, you lose!</p>
+        <p>Let's play a game! I'm a character from the StarWars universe. Ask me up to 5 questions, and see if you can guess who I am. You can submit questions and guesses in any order, but remember-- If you run out of guesses, you lose!</p>
     </div>
         <form id="triviaQuestions">
             <fieldset>
-                <label id="question1"> Question #1
+                <label id="question1"> Ask me questions
                     <select id="dropdown1">
                         <option value="none" selected disabled hidden>Ask a question</option>
                         <!--options append into here-->
                     </select>
                     <button type="button" id="button1">Submit question</button>
                 </label>
-                <label id="question2"> Question #2
-                    <select id="dropdown2">
-                        <option value="none" selected disabled hidden>Ask a question</option>
-                        <!--options append into here-->
-                    </select>
-                </label>
-                <label id="question3"> Question #3
-                    <select id="dropdown3"> 
-                        <option value="none" selected disabled hidden>Ask a question</option>
-                        <!--options append into here-->
-                    </select>
-                </label>
-                <label id="question4"> Question #4
-                    <select id="dropdown4">
-                        <option value="none" selected disabled hidden>Ask a question</option>
-                        <!--options append into here-->
-                    </select>
-                </label>
-                <label id="question5"> Question #5
-                    <select id="dropdown5">
-                        <option value="none" selected disabled hidden>Ask a question</option>
-                        <!--options append into here-->
-                    </select>
-                </label>
+                <p>You have <span id="questionCount"></span> questions remaining.</p>
+                <p><span id="outOfQuestions"></span></p>
+                </fieldset>
+                <fieldset>                 
                 <label> Guess which Character!
                     <select id="characterGuess">
                         <option value="none" selected disabled hidden>Select my name</option>
                         <!--All options go here-->
                     </select>
-                    <button type="button" id="submitGuess">Submit my guess</button>
+                    <button type="button" id="submitGuess">Submit Guess</button>
                     <p>You have <span id="guessCount"></span> guesses remaining.</p>
                 </label>
             </fieldset>
