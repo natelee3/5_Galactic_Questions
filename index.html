@@ -7,16 +7,23 @@
     <title>5 Questions: Galaxy Trivia</title>
     <link rel="icon" href="rebel.jpeg">
     <link rel="stylesheet" href="css/styles.css">
+    <link href​="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="root">
-        <h1 id="mainTitle">5 Questions: Galaxy Trivia</h1>
+         <header> 
+                    
+            <img class="logo" src="oyvsRd.png">
+
+            <h1 id="mainTitle"> 5 question Galactic Trivia </h1>     
+                
+        </header>
         <div id="instructions">
         <p>Let's play a game! I'm a character from the StarWars universe. Ask me up to 5 questions, and see if you can guess who I am. You can submit questions and guesses in any order, but remember-- If you run out of guesses, you lose!</p>
     </div>
         <form id="triviaQuestions">
             <fieldset>
-                <label id="question1"> Ask me questions
+                <label id="question1"> Ask me Questions
                     <select id="dropdown1">
                         <option value="none" selected disabled hidden>Ask a question</option>
                         <!--options append into here-->
@@ -27,7 +34,7 @@
                 <p><span id="outOfQuestions"></span></p>
                 </fieldset>
                 <fieldset>                 
-                <label> Guess which Character!
+                <label> Guess my Character
                     <select id="characterGuess">
                         <option value="none" selected disabled hidden>Select my name</option>
                         <!--All options go here-->

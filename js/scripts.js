@@ -117,9 +117,18 @@ function listenForQuestions(filteredArray, chosenCharacter) {
             chosenCharacter[answerPrompt].length == 0) {
             answer1.innerText = `I don't have any ${answerPrompt}`
         } else {
-            answer1.innerText = `My ${answerPrompt} is ${chosenCharacter[answerPrompt]}`
+            if (selectedIndex == 9) {
+                console.log(chosenCharacter[answerPrompt])
+                getStarshipName(chosenCharacter[answerPrompt][0])
+            } else if (selectedIndex == 6) {
+                getPlanetName(chosenCharacter[answerPrompt])
+            } else {
+                answer1.innerText = `My ${answerPrompt} is ${chosenCharacter[answerPrompt]}`
+            }
         }
-        resultsList.appendChild(answer1)
+        if (answer1.innerText != "") {
+            resultsList.appendChild(answer1)
+        }
         questionsRemaining -= 1;
         if (questionsRemaining == 0) {
             outofQuestions.innerHTML = "You are out of questions. Please make a guess."
@@ -134,7 +143,7 @@ function listenForGuesses (filteredArray, chosenCharacter) {
     const guessCountElement = document.querySelector('#guessCount');
     let guessesRemaining = 5;
     guessCountElement.innerHTML = guessesRemaining;
-    
+
     characterGuessButton.addEventListener('click', function() {
         let userGuess = characterGuess.value;
         console.log("User guessed: ", userGuess);
@@ -156,8 +165,30 @@ function listenForGuesses (filteredArray, chosenCharacter) {
     })
 }
 
+function getStarshipName (url) {
+    fetch(url)
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        const answer1 = document.createElement('li')
+        answer1.innerText = `I have a starship named ${data["name"]}`
+        resultsList.appendChild(answer1)
+    })
+}
+
+function getPlanetName (url) {
+    fetch(url)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            const answer1 = document.createElement('li')
+            answer1.innerText = `My homeworld is called ${data["name"]}`
+            resultsList.appendChild(answer1)
+        })
+}
+
 getCharacterList()
-
-
 
 });

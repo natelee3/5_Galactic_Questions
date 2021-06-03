@@ -1,1 +1,124 @@
+html { 
+    color:white;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-sizing:border-box;
+    display:block;
+    background-image: url(../SW.png);
+    background-position:cover;
+    background-repeat:repeat;
+ 
+ }
+ 
+ 
+ title {
+ display:none;
+ }
+ 
+ header {
+     margin: auto;
+     text-align: center;
+     font-size: 60px;
+     
+ }
+ 
+@font-face {
+    font-family: Star Jedi hollow;
+    src: url(StarJediHollow-A4lL.ttf);
+}
 
+ h1{
+    font-family: Star Jedi;
+    font-size: 80px;
+    margin: 0;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+ }
+ 
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #FFF, 0 0 30px #36e600, 0 0 40px #2ee600, 0 0 50px #2ee600, 0 0 60px #41e600, 0 0 70px #41e600;
+    } to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4dff6b, 0 0 40px #62ff4d, 0 0 50px #6bff4d, 0 0 60px #77ff4d, 0 0 70px #6bff4d, 0 0 80px #77ff4d;
+    }
+}
+
+ .logo {
+     display:inline-block;
+     max-width: 80%;
+    
+ }
+  
+ 
+ #characterGuess, #dropdown1 {
+    font-size: 16px;
+ }
+
+ #triviaQuestions{
+     display: float;
+     font-size: 20px;
+     font-family:'Courier New', Courier, monospace;
+     margin-bottom:5%;
+    
+     
+ }
+ 
+ #instructions {
+     font-size: 16px;
+     text-align: center;
+     
+ }
+ 
+ button {
+   border: solid 20px, black;
+   border-radius: 12px;
+   padding: 15px 32px;
+   margin: 10px;
+   text-align: center;
+   text-decoration:none;
+   display: inline-block;
+   font-size: 16px;
+   box-shadow: 0 0 10px;
+   transform: translate(12px);
+   
+ }
+ 
+ 
+ #submitGuess:hover {
+     transition: 1.5s;
+ 
+ }
+ 
+ #button1 {
+     transition: 0.5s;
+ 
+ }
+ 
+ 
+ /* Dropdown Button */
+ #question1 {
+  
+   padding: 15px 32px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ 
+ p, li {
+     font-family:'Courier New', Courier, monospace;
+     font-size: 16px;
+     font-weight: bold;
+     list-style-type: none;
+ 
+ }
+ 
+ label {
+     display: block;
+     width: 100%;
+     margin: 16px 0;
+     font-family:'Courier New', Courier, monospace;
+     font-weight:bold;
+     
+ }
