@@ -4,13 +4,13 @@ html {
     margin-left: 5%;
     box-sizing:border-box;
     display:block;
-    background-image: url(../SW.png);
+    background-image: url(../images/SW.png);
     background-position:cover;
     background-repeat:repeat;
  
  }
- 
- 
+
+
  title {
  display:none;
  }
@@ -24,11 +24,11 @@ html {
  
 @font-face {
     font-family: Star Jedi hollow;
-    src: url(StarJediHollow-A4lL.ttf);
+    src: url(images/StarJediHollow-A4lL.ttf);
 }
 
  h1{
-    font-family: Star Jedi;
+    font-family: Star Jedi hollow;
     font-size: 80px;
     margin: 0;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
