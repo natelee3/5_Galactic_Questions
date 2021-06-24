@@ -14,7 +14,7 @@ When the site loads, a random Star Wars character is selected. The user can atte
 -Star Wars API
  
 ## Screenshots
-![5 Question Galatic Trivia Screenshot](https://github.com/natelee3/5_galactic_questions/blob/main/images/screenshot.png)
+![5 Question Galatic Trivia Screenshot](https://github.com/natelee3/5_Galactic_Questions/blob/js/images/screenshot.png)
 
 ## Features
 - "Ask me Questions" populates 10 question choices from the http://swapi.dev/api/people/ endpoint
